@@ -1,0 +1,254 @@
+/* Color Variables */
+:root {
+  --clr-nutmeg: hsl(14, 45%, 36%);
+  --clr-dark-raspberry: hsl(332, 51%, 32%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-rose-white: hsl(330, 100%, 98%);
+  --clr-eggshell: hsl(30, 54%, 90%);
+  --clr-light-gray: hsl(30, 18%, 87%);
+  --clr-wenge-brown: hsl(30, 10%, 34%);
+  --clr-dark-charcoal: hsl(24, 5%, 18%);
+
+  --ff-primary: "Young Serif", serif;
+  --ff-secondary: "Outfit", san-serif;
+
+  --fw-regular: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --fs-100: 0.75rem;
+  --fs-300: 0.875rem;
+  --fs-500: 1rem;
+  --fs-600: 1.125rem;
+  --fs-700: 1.25rem;
+  --fs-800: 1.5rem;
+  --fs-900: 2rem;
+
+  --fs-body: var(--fs-500);
+  --fs-primary-heading: var(--fs-900);
+  --fs-secondary-heading: var(--fs-700);
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+Remove list styles on ul,
+ol elements with a list role,
+which suggests default styling will be removed ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+ul > li,
+ol > li {
+  list-style-position: inside;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+html,
+body {
+  height: 100%;
+}
+body {
+  /* min-height: 100vh; */
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-nutmeg {
+  color: var(--clr-nutmeg);
+}
+.text-dark-raspberry {
+  color: var(--clr-dark-raspberry);
+}
+.text-dark-charcoal {
+  color: var(--clr-dark-charcoal);
+}
+.text-wenge-brown {
+  color: var(--clr-wenge-brown);
+}
+.text-light-gray {
+  color: var(--clr-light-gray);
+}
+
+.bg-eggshell {
+  background-color: var(--clr-eggshell);
+}
+.bg-white {
+  background-color: var(--clr-white);
+}
+.bg-rose-white {
+  background-color: var(--clr-rose-white);
+}
+.bg-light-gray {
+  background-color: var(--clr-light-gray);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.ff-body {
+  font-family: var(-ff-secondary);
+}
+.ff-heading {
+  font-family: var(--ff-primary);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-700 {
+  font-size: var(--fs-800);
+}
+.fs-800 {
+  font-size: var(--fs-700);
+}
+.fs-900 {
+  font-size: var(--fs-900);
+}
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+.recipe-wrapper {
+  font-family: var(--ff-secondary);
+}
+.introduction,
+.ingredient-section,
+.instruction-section,
+.nutrition-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+ol > li,
+ul > li {
+  margin-top: 0.75rem;
+}
+.custom-indent {
+  text-indent: 40px;
+}
+.table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+.table tr {
+  border-bottom: solid 1px var(--clr-light-gray);
+}
+.table td {
+  padding: 8px 0;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding: 30px;
+    border-radius: 1.125rem;
+  }
+  .omlette-img {
+    border-radius: 1.125rem;
+  }
+  .recipe-wrapper {
+    padding: 64px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 920px;
+  }
+}
+/* @media screen and (min-width:1200px) {
+  .container{
+      max-width: 1140px;
+
+  }
+}
+@media screen and (min-width:1400px) {
+  .container{
+      max-width: 1320px;
+
+  }
+} */
