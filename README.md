@@ -22,7 +22,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./public/images/Omelet Rice Recipe Page-screenshot.png)
+![Omelet Rice Recipe Page Solution Screenshot]([./public/images/Omelet Rice Recipe Page-screenshot.png](https://github.com/ShyamPrasadPV/simple-omlete-rice-recipe-page/blob/main/public/images/Omelet%20Rice%20Recipe%20Page-screenshot.png))
 
 
 ### Links
